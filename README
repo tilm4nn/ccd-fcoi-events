@@ -7,8 +7,9 @@ And three implementations of EventSender:
 EventSenderBase, ReverseEventSenderBase, AsyncEventSenderBase
 
 Adding an additional AsyncReverseEventSenderBase does not work out of the box
-with clean code because the other event senders are created using an inheritence
-hierarchy.
+with clean code because the other event senders are created using an inheritance
+hierarchy. Yes, I know that an asynchronous and reverse event sender does not
+make much sense but it is good enough for this example ;)
 
 Goal:
 Refactor the event senders to use composition instead of inheritance so that an
